@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <title>Website of Olga Fomin, frontend web developer</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="logo">OlgaF</a>
+
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <button class="btn-2" onlick="window.location.href='contact.html'">Contact Me</button>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero-section">
+        <img src="img/hero-image.png" alt="Hero Image">
+
+        <div class="hero-headline">
+            <h1>Olga Fomin</h1>
+            <h2>Web Developer</h2>
+
+            <!-- Hero Buttons -->
+             <div class="hero-buttons">
+            <button class="btn-2 btn-hero" onclick="window.location.href='projects.html'">
+                <i class="fa-solid fa-arrow-right-long" style="color: white"></i>
+                <p>See My Projects</p>
+            </button>
+            <button class="btn-2 btn-hero" onclick="window.location.href='contact.html'">
+                <i class="fa-solid fa-arrow-right-long" style="color: white"></i>
+                <p>Contact Me</p>
+            </button>
+             </div>
+
+            <!-- Hero Logos -->
+             <div class="hero-logos">
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-node-js"></i>
+             </div>
+
+             <div class="hero-tagline">
+                <p>Creating responsive and engaging web experiences</p>
+                <hr class="divider" />
+             </div>
+        </div>
+    </section>
+     <!-- Hero Section End -->
+
+     <!-- About Section -->
+     <section class="about-section" id="about-section">
+        <div class="about-content">
+            <h2>About Me</h2>
+        </div>
+     </section>
+     <!-- End of About Section -->
+</body>
+</html>
