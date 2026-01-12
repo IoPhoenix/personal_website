@@ -146,11 +146,9 @@ nav.sticky {
     padding: 0 50px;
     gap: 50px;
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    mask-repeat: no-repeat;
     mask-position: center;
     mask-size: cover;
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     -webkit-mask-size: cover;
 }
@@ -227,4 +225,132 @@ nav.sticky {
     font-size: 20px;
     text-justify: inner-word;
     text-align: justify;
+}
+
+/* About Section  */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 82px;
+}
+
+.about-section div {
+    display: flex;
+    width: 1111px;
+    gap: 40px;
+}
+
+.about-section #first-about-img {
+    -webkit-mask-image: radial-gradient(var(--black) 40%, transparent 80%);
+    mask-image: radial-gradient(var(--black) 40%, transparent 80%);
+}
+
+.about-section #second-about-img {
+    border-radius: 30px;
+}
+
+.about-headline {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-headline p {
+    font-size: 36px;
+}
+
+.about-headline hr {
+    width: 50%;
+    margin-top: 5px;
+}
+
+.about-section .about-headline:nth-child(2) {
+    align-items: end;
+}
+
+.about-section .about-headline:nth-child(2) p {
+    text-align: end;
+    font-weight: 800;
+}
+
+.about-section .about-headline:nth-child(2) p b {
+    color: var(--accent);
+}
+
+.btn-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-about p {
+    font-size: 20px;
+}
+
+/* Projects Section */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.projects-section h2 {
+    font-size: 64px;
+    align-self: center;
+    margin-bottom: 60px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 50px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.project-card img {
+    border-radius: 15px;
+}
+
+.project-title {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.project-title h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.project-title h4 {
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.project-links a {
+    font-size: 20px;;
+    padding: 5px;
+    color: white;
+    border: 1px solid transparent;
+    border-bottom: 1px solid white;
+    margin-right: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-links a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: var(--black);
 }
