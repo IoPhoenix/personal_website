@@ -1,19 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-/* .open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -169,7 +160,7 @@ nav.sticky {
 
 .hero-headline h1 {
     font-size: 96px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .hero-headline h2 {
@@ -222,7 +213,7 @@ nav.sticky {
 }
 
 .hero-tagline p {
-    font-size: 20px;
+    font-size: 26px;
     text-justify: inner-word;
     text-align: justify;
 }
@@ -273,7 +264,7 @@ nav.sticky {
 
 .about-section .about-headline:nth-child(2) p {
     text-align: end;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .about-section .about-headline:nth-child(2) p b {
@@ -353,4 +344,92 @@ nav.sticky {
     background-color: white;
     text-decoration: none;
     color: var(--black);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: var(--black);
+    gap: 24px;
+}
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 430px;
+    height: 250px;
+    background-color: var(--gray);
+    justify-content: space-between;
+    border-radius: 32px;
+    padding: 40px 40px 22px 40px;
+}
+
+.testimony-text {
+    font-size: 20px;
+}
+
+.testimony-author {
+    font-size: 16px;
+}
+
+.testimony-author p {
+    padding-bottom: 5px;
+}
+
+.testimony-author i {
+    color: var(--accent);
+     padding-top: 10px;
+}
+
+/* Callout Section */
+.callout-section {
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px 0 150px;
+    color: white;
+    background-color: var(--black);
+    margin-bottom: 50px;
+}
+
+.callout-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.callout-section div h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-callout {
+    font-size: 32px;
+    background-color: white;
+    border: 1px solid white;
+    color: var(--black);
+    border-radius: 32px;
+    width: 400px;
+    height: 65px;
+    font-weight: 700;
+    filter: drop-shadow(5px 5px 10px transparent);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-callout:hover {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    color: white;
+    filter: drop-shadow(10px 10px 20px rgba(7, 57, 255, 0.8));
 }
