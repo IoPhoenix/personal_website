@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@keyframes screenshots {
+    to {
+        -webkit-background-position: 400% 0;
+        background-position: 400% 0;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -123,6 +130,7 @@ nav.sticky {
     color: white;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-2:hover {
@@ -165,7 +173,10 @@ nav.sticky {
 
 .hero-headline h2 {
     font-size: 56px;
-    color: var(--accent);
+    color: transparent;
+    background: linear-gradient(90deg, var(--accent), #961D22, #7000FF, var(--accent)) 0% 0%/400% 100%;
+    background-clip: text;
+    animation: screenshots 30s infinite linear;
 }
 
 .hero-buttons {
@@ -354,15 +365,15 @@ nav.sticky {
     align-items: center;
     padding: 100px 50px;
     background-color: var(--black);
-    gap: 24px;
+    gap: 40px;
 }
 
 .testimony {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 430px;
-    height: 250px;
+    width: 500px;
+    height: 300px;
     background-color: var(--gray);
     justify-content: space-between;
     border-radius: 32px;
@@ -370,11 +381,11 @@ nav.sticky {
 }
 
 .testimony-text {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .testimony-author {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .testimony-author p {
@@ -420,11 +431,13 @@ nav.sticky {
     color: var(--black);
     border-radius: 32px;
     width: 400px;
-    height: 65px;
     font-weight: 700;
     filter: drop-shadow(5px 5px 10px transparent);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 5px;
 }
 
 .btn-callout:hover {
